@@ -1,0 +1,35 @@
+<div class="container">
+
+  <h1>Stupid Coaching</h1>
+
+  <br>
+
+  <div class="verticalLine">
+    <figure>
+      <blockquote class="blockquote">
+        <p><%= "'#{params[:question]}'" %></p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        <cite title="Source Title">You</cite>
+      </figcaption>
+    </figure>
+  </div>
+
+  <br>
+
+  <div class="verticalLine" id="answer">
+    <figure>
+      <blockquote class="blockquote">
+        <p><%= "'#{@answer}'" %></p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        <cite title="Source Title">Your coach</cite>
+      </figcaption>
+    </figure>
+  </div>
+
+  <br>
+
+  <%= link_to "Ask another question", ask_path %>
+
+</div>
